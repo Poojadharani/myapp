@@ -1,0 +1,35 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:left">
+          <table border="1">
+            S.No:<br><br>
+            <input [(ngModel)]="sno" type="text" name="sno"><br><br>
+            UserType Code:<br><br>
+            <input [(ngModel)]="code" type="text" name="code" ><br><br>
+            UserType Name:<br><br>
+            <input [(ngModel)]="name" type="text" name="name"><br>
+            <br><br>
+            <table>
+              <tr>
+                <td><button (click)="onclick()">Add</button></td>
+                <td><button (click)="onclear()">Clear</button></td><br>{{status}}
+              </tr>
+            </table>
+          </table><br><br>
+  </div>
+  <div>
+      <table border="1">
+          <tr>
+            <th>S.No</th><br><br>
+            <th>UserTypeCode</th><br><br>
+            <th>UserTypeName</th>
+          </tr>
+          <tr *ngFor="let row of rows">
+              <td>{{row.sno}}</td><br><br>
+              <td>{{row.code}}</td><br><br>
+              <td>{{row.name}}</td>
+            </tr>
+        </table>
+  </div>
+  
+
+      
