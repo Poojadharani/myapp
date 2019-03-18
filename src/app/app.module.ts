@@ -9,6 +9,7 @@ import { AddusertypeComponent } from './addusertype/addusertype.component';
 import { UsertypeslistComponent } from './usertypeslist/usertypeslist.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { UserstableComponent } from './userstable/userstable.component';
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
@@ -23,7 +24,13 @@ import { UserstableComponent } from './userstable/userstable.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    AgGridModule.withComponents(null)
+    AgGridModule.withComponents(null),
+    RouterModule.forRoot([
+      {
+        path:'UserType',
+        component:AddusertypeComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
