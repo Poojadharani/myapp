@@ -1,0 +1,8 @@
+<div>
+  <h2>Add</h2>
+  Enter first number:<input type="text" [(ngModel)]="firstnumber"><br><br>
+  Enter second number:<input type="text" [(ngModel)]="secondnumber"><br><br>
+  <button (click)=click(firstnumber,secondnumber)>Result</button><br><br>
+  Answer:<input type=”text” value="{{ getAnswer() }}">
+</div>
+
