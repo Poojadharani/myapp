@@ -27,6 +27,6 @@ modelu:Usertype[];
     this.sno='';this.code='';this.name='';
   }
   onclear(){
-    this.sno='';this.code='';this.name='';
+    //this.sno='';this.code='';this.name='';
   }
 }
