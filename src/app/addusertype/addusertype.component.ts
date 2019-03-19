@@ -26,7 +26,8 @@ modelu:Usertype[];
     this.status="Added Successfully";
     this.sno='';this.code='';this.name='';
   }
-  onclear(){
-    //this.sno='';this.code='';this.name='';
+  onclear()
+  {
+    this.sno='';this.code='';this.name='';
   }
 }

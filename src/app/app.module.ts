@@ -9,28 +9,37 @@ import { AddusertypeComponent } from './addusertype/addusertype.component';
 import { UsertypeslistComponent } from './usertypeslist/usertypeslist.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { UserstableComponent } from './userstable/userstable.component';
-import {RouterModule} from '@angular/router';
+import {RouterModule,Routes} from '@angular/router';
+import { AdditionComponent } from './addition/addition.component';
+import { SubtractionComponent } from './subtraction/subtraction.component';
+import { MultiplicationComponent } from './multiplication/multiplication.component';
 
-
+const approutes:Routes=[
+  {path:'UserType',component:AddusertypeComponent},
+  {path:'add',component:AdditionComponent},
+  {path:'sub',component:SubtractionComponent},
+  {path:'mul',component:MultiplicationComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     AddusertypeComponent,
     UsertypeslistComponent,
-    UserstableComponent
+    UserstableComponent,
+    AdditionComponent,
+    SubtractionComponent,
+    MultiplicationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AgGridModule.withComponents(null),
-    RouterModule.forRoot([
-      {
-        path:'UserType',
-        component:AddusertypeComponent
-      }
-    ])
+    RouterModule.forRoot(
+      approutes,
+      {enableTracing:true}
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
