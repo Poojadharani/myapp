@@ -15,6 +15,7 @@ import { SubtractionComponent } from './subtraction/subtraction.component';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
 import { DivisionComponent } from './division/division.component';
 import { ArraymethodsComponent } from './arraymethods/arraymethods.component';
+import { ExampleComponent } from './example/example.component';
 
 const approutes:Routes=[
   {path:'UserType',component:AddusertypeComponent},
@@ -35,7 +36,8 @@ const approutes:Routes=[
     SubtractionComponent,
     MultiplicationComponent,
     DivisionComponent,
-    ArraymethodsComponent
+    ArraymethodsComponent,
+    ExampleComponent
   ],
   imports: [
     BrowserModule,
