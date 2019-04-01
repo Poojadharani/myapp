@@ -23,8 +23,8 @@ modelu:Usertype[];
      //console.log(this.code);
      //console.log(this.name);
     this.rows.push( {sno: this.sno, code: this.code, name: this.name } );
-    this.status="Added Successfully";
-    this.sno='';this.code='';this.name='';
+    //this.status="Added Successfully";
+    //this.sno='';this.code='';this.name='';
   }
   onclear()
   {

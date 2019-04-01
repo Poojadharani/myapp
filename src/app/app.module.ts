@@ -13,12 +13,16 @@ import {RouterModule,Routes} from '@angular/router';
 import { AdditionComponent } from './addition/addition.component';
 import { SubtractionComponent } from './subtraction/subtraction.component';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
+import { DivisionComponent } from './division/division.component';
+import { ArraymethodsComponent } from './arraymethods/arraymethods.component';
 
 const approutes:Routes=[
   {path:'UserType',component:AddusertypeComponent},
   {path:'add',component:AdditionComponent},
   {path:'sub',component:SubtractionComponent},
-  {path:'mul',component:MultiplicationComponent}
+  {path:'mul',component:MultiplicationComponent},
+  {path:'div',component:DivisionComponent},
+  {path:'arr',component:ArraymethodsComponent}
 ];
 @NgModule({
   declarations: [
@@ -29,7 +33,9 @@ const approutes:Routes=[
     UserstableComponent,
     AdditionComponent,
     SubtractionComponent,
-    MultiplicationComponent
+    MultiplicationComponent,
+    DivisionComponent,
+    ArraymethodsComponent
   ],
   imports: [
     BrowserModule,
